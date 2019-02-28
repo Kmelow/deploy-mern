@@ -1,10 +1,14 @@
 {
   "name": "deploy-mern",
   "version": "1.0.0",
-  "description": "... Under :construction: :smiley_cat:",
-  "main": "./src/index.js",
+  "description": "Minimal MERN stack",
+  "main": "server.js",
   "scripts": {
     "build": "webpack",
+    "client": "",
+    "dev": "",
+    "server": "nodemon server.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +22,14 @@
   },
   "homepage": "https://github.com/Kmelow/deploy-mern#readme",
   "devDependencies": {
+    "nodemon": "^1.18.10",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.16"
   }
 }
