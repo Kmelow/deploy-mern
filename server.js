@@ -8,6 +8,8 @@ require('./models/Item');
 // Mapping global promisses
 mongoose.Promise = global.Promise;
 
+// Loading Routes
+
 // Launch Express
 const app = express();
 

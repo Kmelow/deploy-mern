@@ -5,7 +5,7 @@ Under :construction: :smiley_cat:
 --------------------------------
 ## TL;DR
 
-> I'll try my best to ALLWAYS apply **best practices** and highlight `what`, `how` and specially the `source` from which I got the inspiration.
+> I'll try my best to ALWAYS apply **best practices** and highlight `what`, `how` and specially the `source` from which I got the inspiration.
 
 English is also not my first language, so feel free to submit a pull request for any typos found
 
@@ -147,6 +147,7 @@ Scripts:
 
 --------------------------------
 ## Express
+The express framework provides an instance [Router](http://expressjs.com/en/guide/routing.html). It is a middleware that allows to connect a routing system
 
 --------------------------------
 ## [Mongoose](https://mongoosejs.com/)
