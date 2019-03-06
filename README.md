@@ -3,9 +3,9 @@
 Under :construction: :smiley_cat:
 
 --------------------------------
-## TL;DR
+## Welcome
 
-> I'll try my best to ALWAYS apply **best practices** and highlight `what`, `how` and specially the `source` from which I got the inspiration.
+> I'll try my best to ALWAYS apply **best practices** and highlight `what`, `how` and specially the `source`.
 
 English is also not my first language, so feel free to submit a pull request for any typos found
 
