@@ -8,6 +8,9 @@ require('./models/Item');
 // Mapping global promisses
 mongoose.Promise = global.Promise;
 
+// Requiring Routes
+const items = require('./routes/api/items');
+
 // Loading Routes
 
 // Launch Express
@@ -22,7 +25,10 @@ mongoose
 	.then(console.log('MongoDB connected...'))
 	.catch(err => console.log(err));
 
-// 
+// Use Routes
+app.use('/api/items', items);
+
+// Use port 5000 if not set by environment
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server started on ${PORT}`))
