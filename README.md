@@ -58,7 +58,12 @@ module.exports = {
 
     $ heroku git:remote -a <name-of-your-app-in-heroku>
     ```
-    4. Deploy 
+    4. Set up Configuration variables for database on https://dashboard.heroku.com > your-app-in-heroku > settings > Reveal Config. vars:
+        ```javascript
+        KEY: "MONGO_URI"
+        value: "mongodb://<dbuser>:<dbpassword>@ds.../database-prod"
+        ```
+    5. Deploy 
     ```bash
     $ git add .
     $ git commit -m 'A meaningfull modification description'
@@ -147,6 +152,10 @@ module.exports = {
 };
 ```
 6. Browser compatibility: It supports [all browsers that are ECMA5 compliant](https://kangax.github.io/compat-table/es5/). To support older browsers [polyfill](https://webpack.js.org/guides/shimming/) must be used in order to allow `Promises` for `import()` and `require.insure()`.
+
+### Guide
+
+
 --------------------------------
 ## [Babel](https://babeljs.io/docs/en/index.html)
 

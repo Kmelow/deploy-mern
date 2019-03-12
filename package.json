@@ -3,18 +3,23 @@
   "version": "1.0.0",
   "description": "Minimal MERN stack",
   "main": "./src/server/index.js",
+  "engines": {
+    "node": "10.15.0",
+    "npm": "6.8.0"
+  },
   "scripts": {
     "build": "webpack --mode production",
     "client": "webpack-dev-server --mode development --hot",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon src/server/index.js",
+    "start": "node index.js --prefix src/server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Kmelow/deploy-mern.git"
   },
-  "author": "",
+  "author": "Camilo Coelho",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Kmelow/deploy-mern/issues"
@@ -25,6 +30,7 @@
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^2.0.0",
     "css-loader": "^2.1.1",
     "html-webpack-plugin": "^3.2.0",
     "nodemon": "^1.18.10",

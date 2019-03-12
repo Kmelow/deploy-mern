@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/client/index.js',
@@ -30,7 +31,9 @@ module.exports = {
     }
   },
   plugins: [
+		new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
+			title: "Output management",
       template: "./src/client/public/index.html",
       favicon: "./src/client/public/favicon.ico"
     })
