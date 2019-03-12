@@ -5,33 +5,28 @@ Under :construction: :smiley_cat:
 --------------------------------
 ## Welcome
 
-> I'll try my best to ALWAYS apply **best practices** and highlight `what`, `how` and specially the `source`.
-
-English is also not my first language, so feel free to submit a pull request for any typos found
-
-## What is This?
-Minimal MERN stack open-source.
+This is a minimal MERN stack open-source.
 
 - `Front End` Vanilla React with Webpack and Babel.
-- `Back End` Node with Express and MongoDB database with Mongoose.
+- `Back End` Node with Express and MongoDB database, using Mongoose.
 
-## Who is intended for?
-- Fell free to clone and work on your own projects
-- All contributions are more than welcome, so please file an issue or pull request to make it awesome
+## :man_shrugging: Who is intended for?
+- `Developers` Fell free to clone and work on your own projects
+- `Contributors` All contributions are more than welcome, so please file an issue or pull request to make it awesome
 
-## How to launch it? :rocket:
-- Setup mLab:
+## :rocket: How to launch it?
+### Setup mLab:
 1. Create an [mLab](https://www.mlab.com/home) account
 2. Create a new database-dev (for development)
 3. Add database user inside the databases/Users
-4. Inside `./config/keys-dev.js` (see [config](#config)) add an object to connect using the driver replacing with the user and password previously created
+4. Inside `./config/keys-dev.js` (see [config](#config)) add an object to connect using the driver (provided on mLab.com/databases/database-dev) replacing the user and password (previously created)
 ```javascript
 // ./config/keys-dev.js
 module.exports = {
   mongoURI: 'mongodb://<dbuser>:<dbpassword>@ds.../database-dev'
 }
 ```
-5. Repeat 2. and 3. for database-prod (for production) and add the connection object to `./config/keys-prod.js`. The `process.env.MONGO_URI` will be linked later in Heroku.
+5. Repeat 2. and 3. for database-prod (for production) and add the connection object to `./config/keys-prod.js`. The `process.env.MONGO_URI` will be linked later deployment (Heroku).
 ```javascript
 // ./config/keys-prod.js
 module.exports = {
