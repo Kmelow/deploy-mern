@@ -1,9 +1,9 @@
 # deploy-mern
 
-Under :construction: :smiley_cat:
+Under :construction:
 
 --------------------------------
-## Welcome
+## :raised_hands: Welcome
 
 This is a minimal MERN stack open-source.
 
@@ -35,7 +35,7 @@ module.exports = {
 ```
 
 --------------------------------
-## Contents (Further Reading)
+## :books: Contents (Further Reading)
 - [Webpack](#Webpack)
 - [Babel](#Babel)
 - [React](#React)
@@ -45,7 +45,6 @@ module.exports = {
 - [Extra Packages](#Extra-Packages)
 - [Security](#Security)
 - [Milestones](#Milestones)
-- [References](#References)
 
 --------------------------------
 ## [Webpack](https://webpack.js.org/guides/getting-started/)
@@ -130,18 +129,18 @@ $ npm install --save @babel/polyfill
 ```
 
 --------------------------------
-## [React]()
+## [React](https://reactjs.org/docs/getting-started.html)
 
 - Install React and React-dom: `$ npm install react react-dom`
 
 --------------------------------
-## Node
+## [Node](https://nodejs.org/en/docs/)
 ### `package.json`
 Scripts:
 - `npm run server`: It will run only the server using nodemon
 
 --------------------------------
-## Express
+## [Express](https://expressjs.com/en/guide/routing.html)
 The express framework provides an instance [Router](http://expressjs.com/en/guide/routing.html). It is a middleware that allows to connect a routing system
 
 --------------------------------
@@ -149,14 +148,14 @@ The express framework provides an instance [Router](http://expressjs.com/en/guid
 To interface with MongoDB we are using [mongoose](https://mongoosejs.com/)
 
 --------------------------------
-## Extra Packages
+## :package: Extra Packages
 - `body-parser` It is necessary, so that we can read the `body` data that comes into the server
 - `concurrently` It is necessary so we can run simultaneously the server and the client
 - `mongoose` Interact with MongoDB
 - `nodemon` Automatically restarts the node app
 
 --------------------------------
-## Security
+## :closed_lock_with_key: Security
 > Because security deserves its own section
 
 ### config
@@ -166,13 +165,5 @@ This folder will contain the keys to the server tools.
 It is also important that the development and production keys can be independent. So the `keys.js` will decide, depending on the environment, if it will use the development or production keys. *The development keys do not need to be commited
 
 --------------------------------
-## Milestones  :triangular_flag_on_post:
-- :construction: MVP: deploy `#deployMern` to Heroku using React (with Webpack and Babel) and Node (with Express and MongoDB)
-
-
---------------------------------
-## References
-- [0] [Github Emoji Cheat Sheet](https://www.webfx.com/tools/emoji-cheat-sheet/)
-- [1] [React architecture 1](https://daveceddia.com/react-project-structure/)
-- [2] [2 Approaches setting MERN](https://developer.okta.com/blog/2018/01/11/two-approaches-to-setting-up-a-mern-stack-app)
-- [3] [mern.io](http://mern.io/)
+## :triangular_flag_on_post: Milestones ::flag
+- :construction: MVP: deploy app to Heroku using React (with Webpack and Babel) and Node (with Express and MongoDB)
