@@ -15,6 +15,18 @@ This is a minimal MERN stack open-source.
 - `Contributors` All contributions are more than welcome, so please file an issue or pull request to make it awesome
 
 ## :rocket: How to launch it?
+### Get the project from Github
+
+:octocat: [Fork](https://github.com/Kmelow/deploy-mern) the repo in Github
+
+Then in the terminal set up the project
+```bash
+$ cd ~/path/to/your/projects
+$ git clone https://github.com/<your_user>/deploy-mern.git
+$ cd deploy-mern
+```
+
+
 ### Setup mLab:
 1. Create an [mLab](https://www.mlab.com/home) account
 2. Create a new database-dev (for development)
@@ -33,6 +45,25 @@ module.exports = {
   mongoURI: process.env.MONGO_URI
 }
 ```
+
+### Set up Heroku
+1. Install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+2. In the terminal:
+    1. Verify installation `$ heroku --version`
+    2. Login `$ heroku login`
+    3. Create an app and set an upstream to Heroku
+    ```bash
+    $ heroku create
+    Creating app... done, ⬢ <name-of-your-app-in-heroku>
+
+    $ heroku git:remote -a <name-of-your-app-in-heroku>
+    ```
+    4. Deploy 
+    ```bash
+    $ git add .
+    $ git commit -m 'A meaningfull modification description'
+    $ git push heroku master
+    ```
 
 --------------------------------
 ## :books: Contents (Further Reading)
