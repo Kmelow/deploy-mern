@@ -2,7 +2,7 @@
   "name": "deploy-mern",
   "version": "1.0.0",
   "description": "Minimal MERN stack",
-  "main": "server.js",
+  "main": "./src/index.js",
   "scripts": {
     "build": "webpack",
     "client": "",
