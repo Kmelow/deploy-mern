@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
+import '../style.css';
 
 class App extends Component {
 	render() {
 		return (
-			<h1>Hello from deploy-mern</h1>
+			<h1>Hello from deploy-mern!!!!!</h1>
 		)
 	}
 }
