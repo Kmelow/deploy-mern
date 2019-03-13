@@ -2,7 +2,7 @@
   "name": "deploy-mern",
   "version": "1.0.0",
   "description": "Minimal MERN stack",
-  "main": "./src/server/index.js",
+  "main": "./index.js",
   "engines": {
     "node": "10.15.0",
     "npm": "6.8.0"
@@ -11,8 +11,8 @@
     "build": "webpack --mode production",
     "client": "webpack-dev-server --mode development --hot",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "nodemon src/server/index.js",
-    "start": "node index.js --prefix src/server",
+    "server": "nodemon index.js",
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
