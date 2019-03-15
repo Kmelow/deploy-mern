@@ -14,8 +14,7 @@
 		"client": "webpack-dev-server --mode development --hot",
 		"dev": "concurrently \"npm run server\" \"npm run client\"",
 		"server": "nodemon index.js",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false"
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
 		"type": "git",
