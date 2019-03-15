@@ -1,11 +1,9 @@
-import React, {Component} from 'react';
-import '../public/style.css';
+import React, { Component } from 'react';
+import '../../public/style.css';
 
 class App extends Component {
 	render() {
-		return (
-			<h1>Hello from deploy-mern!!!!!</h1>
-		)
+		return <h1>Hello from deploy-mern!!!!!</h1>;
 	}
 }
 
