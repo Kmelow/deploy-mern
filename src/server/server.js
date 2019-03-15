@@ -23,11 +23,12 @@ app.use(bodyParser.json());
 mongoose
 	.connect(keys.mongoURI, { useNewUrlParser: true })
 	.then(console.log('MongoDB connected...'))
-	.catch(err => console.log(err));
+	.catch((err) => console.log(err));
 
 // Use Routes
 app.use('/api/items', items);
+app.use('/', (req, res) => res.send('Hellooooo'));
 
 // Listen on port 5000 if not set by environment
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server started on ${PORT}`))
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Server started on ${PORT}`));
