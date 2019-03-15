@@ -1,5 +1,4 @@
 const express = require('express');
-const path = require('path');
 
 // Requiring routes
 const item = require('./src/server/routes/api/item');
